@@ -69,3 +69,6 @@ A continuación, se detallan las pruebas realizadas, especificando las entradas 
 
 La superación de estas pruebas muestra que el método `depth` de la clase `BST` está funcionando correctamente para estos casos de prueba.
 
+# Pruebas de la clase SizeTest (El número de nodos)
+
+# Pruebas de la clase SizeTest (Profundidad, no puede ser más de 50)
