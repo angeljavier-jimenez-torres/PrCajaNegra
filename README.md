@@ -69,6 +69,23 @@ A continuación, se detallan las pruebas realizadas, especificando las entradas 
 
 La superación de estas pruebas muestra que el método `depth` de la clase `BST` está funcionando correctamente para estos casos de prueba.
 
-# Pruebas de la clase SizeTest (El número de nodos)
+# Pruebas de la clase SizeTest
+Devuelve el número de nodos
 
-# Pruebas de la clase SizeTest (Profundidad, no puede ser más de 50)
+# Pruebas de la clase DepthTest (Profundidad, no puede ser más de 50)
+En el nivel 50 solo se puede insertar 1 número
+
+# Pruebas de la clase toListTest
+Devuelve la lista en orden de menor a mayor
+
+# Pruebas de la clase GetSubTreeTest
+Devuelve un subárbol del árbol principal
+
+# GetRootTest
+Devuelve el primer nodo. Para ello getRoot().getContent();
+
+# PrintBetweenLevelTest
+Verifica que el método devuelve correctamente los elementos entre los niveles especificados y que lanza excepciones cuando se le dan entradas inválidas.
+
+
+

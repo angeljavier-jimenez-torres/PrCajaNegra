@@ -19,8 +19,13 @@ public class App {
         bst.insert(6,  true);
         bst.insert(8, true);
 
-        printTree(bst.getRoot());
-        System.out.println("\nDepth of tree: " + bst.depth());
+        System.out.println(bst.getSubTree(bst.search(7)).toList());
+
+
+
+
+        //printTree(bst.getRoot());
+        //System.out.println("\nDepth of tree: " + bst.depth());
     }
 
     public static void printTree(Node root) {
