@@ -4,8 +4,7 @@ import com.bst.BST;
 
 public class App{
     public static void main(String[] args) {
-        BST<Integer> bst = new BST<>(10);
-        bst.search(3);
-        System.out.println("Hola mundo");
+        BST<Integer> bst = new BST<>();
+
     }
 }
