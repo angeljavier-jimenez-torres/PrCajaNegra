@@ -8,7 +8,7 @@ Vamos a probar las funciones `insert`, `search` y `printBetweenLevel` de la clas
 
 # Pruebas de la clase InsertTest
 
-El método `insert` de la clase BST se utiliza para insertar un valor específico en el árbol. Si el valor se inserta correctamente, el método aumenta el tamaño del árbol y coloca el valor en el nodo correspondiente. Si el valor está fuera del rango permitido, el método lanza una `IllegalArgumentException`. A continuación, se detallan las pruebas realizadas, las entradas utilizadas, las salidas esperadas y las salidas reales.
+El método `insert` de la clase BST se utiliza para insertar un valor específico en el árbol. Si el valor se inserta correctamente, el método aumenta el tamaño del árbol y coloca el valor en el nodo correspondiente. Si el valor está fuera del rango permitido, el método lanza una `IllegalArgumentException`, y una `DepthException` si intentamos insertar un elemento a una profundidad mayor que la permitida. A continuación, se detallan las pruebas realizadas, las entradas utilizadas, las salidas esperadas y las salidas reales.
 
 1. `testInsertAtLowerBoundary()`: Probamos la inserción de `-2500`, que es el límite inferior del rango permitido. Esperábamos que el tamaño del BST fuera 1 y que el contenido de la raíz fuera `-2500`. Ambas expectativas se cumplieron.
 
@@ -45,3 +45,27 @@ Antes de ejecutar las pruebas, insertamos algunos elementos en el BST. Los eleme
 7. `testSearchNonExistentValue()`: Probamos la búsqueda de `0`, que es un valor que no existe en el BST. Esperábamos que el resultado fuera `null`, indicando que el valor no se encontró en el BST. Esta expectativa se cumplió.
 
 Estas pruebas cubren una variedad de casos, incluyendo valores en los límites, valores justo dentro y fuera de los límites, y valores que no existen en el BST. Al pasar todas estas pruebas, podemos tener confianza en que el método `search` de la clase BST está funcionando correctamente.
+
+# Pruebas de la clase DepthTest
+
+El método `depth` de la clase `BST` (Binary Search Tree) calcula y devuelve la profundidad máxima del árbol. Hemos utilizado pruebas de clases de equivalencia para verificar su correcto funcionamiento en diferentes escenarios.
+
+A continuación, se detallan las pruebas realizadas, especificando las entradas utilizadas, las salidas esperadas y las salidas reales:
+
+1. **Prueba `testDepthEmptyTree`**: Esta prueba verifica el caso en el que el árbol está vacío.
+    - Entrada: Un árbol `BST` vacío.
+    - Salida esperada: 0, ya que la profundidad de un árbol vacío es 0.
+    - Salida real: El método `depth` devuelve 0, lo que indica que la prueba ha pasado.
+
+2. **Prueba `testDepthSingleTreeNode`**: Esta prueba verifica el caso en el que el árbol tiene un solo nodo.
+    - Entrada: Un árbol `BST` con un solo nodo.
+    - Salida esperada: 1, ya que la profundidad de un árbol con un solo nodo es 1.
+    - Salida real: El método `depth` devuelve 1, lo que indica que la prueba ha pasado.
+
+3. **Prueba `testDepthMultipleTreeNodes`**: Esta prueba verifica el caso en el que el árbol tiene más de un nodo.
+    - Entrada: Un árbol `BST` con varios nodos.
+    - Salida esperada: Un número mayor que 1, ya que la profundidad de un árbol con más de un nodo es mayor que 1.
+    - Salida real: El método `depth` devuelve un número mayor que 1, lo que indica que la prueba ha pasado.
+
+La superación de estas pruebas muestra que el método `depth` de la clase `BST` está funcionando correctamente para estos casos de prueba.
+
